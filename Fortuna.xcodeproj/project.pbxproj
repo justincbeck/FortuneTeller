@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		982AF8AC14BDD5160016AEF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982AF8AB14BDD5160016AEF0 /* UIKit.framework */; };
+		982AF8AE14BDD5160016AEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982AF8AD14BDD5160016AEF0 /* Foundation.framework */; };
+		982AF8B014BDD5160016AEF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982AF8AF14BDD5160016AEF0 /* CoreGraphics.framework */; };
+		982AF8B614BDD5160016AEF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 982AF8B414BDD5160016AEF0 /* InfoPlist.strings */; };
+		982AF8B814BDD5160016AEF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 982AF8B714BDD5160016AEF0 /* main.m */; };
+		982AF8BC14BDD5160016AEF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 982AF8BB14BDD5160016AEF0 /* AppDelegate.m */; };
+		98EB522A14C0B43900F7A1A6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EB522914C0B43900F7A1A6 /* MainViewController.m */; };
+		98EB522D14C0B44F00F7A1A6 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EB522C14C0B44F00F7A1A6 /* MainView.m */; };
+		98EB523014C0B46300F7A1A6 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EB522F14C0B46300F7A1A6 /* DrawerViewController.m */; };
+		98EB523314C0B47300F7A1A6 /* DrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EB523214C0B47300F7A1A6 /* DrawerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		982AF8A714BDD5160016AEF0 /* Fortuna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fortuna.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		982AF8AB14BDD5160016AEF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		982AF8AD14BDD5160016AEF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		982AF8AF14BDD5160016AEF0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		982AF8B314BDD5160016AEF0 /* Fortuna-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fortuna-Info.plist"; sourceTree = "<group>"; };
+		982AF8B514BDD5160016AEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		982AF8B714BDD5160016AEF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		982AF8B914BDD5160016AEF0 /* Fortuna-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fortuna-Prefix.pch"; sourceTree = "<group>"; };
+		982AF8BA14BDD5160016AEF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		982AF8BB14BDD5160016AEF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		98EB522814C0B43900F7A1A6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		98EB522914C0B43900F7A1A6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		98EB522B14C0B44F00F7A1A6 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		98EB522C14C0B44F00F7A1A6 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		98EB522E14C0B46300F7A1A6 /* DrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
+		98EB522F14C0B46300F7A1A6 /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		98EB523114C0B47300F7A1A6 /* DrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerView.h; sourceTree = "<group>"; };
+		98EB523214C0B47300F7A1A6 /* DrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		982AF8A414BDD5160016AEF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982AF8AC14BDD5160016AEF0 /* UIKit.framework in Frameworks */,
+				982AF8AE14BDD5160016AEF0 /* Foundation.framework in Frameworks */,
+				982AF8B014BDD5160016AEF0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		982AF89C14BDD5150016AEF0 = {
+			isa = PBXGroup;
+			children = (
+				982AF8B114BDD5160016AEF0 /* Fortuna */,
+				982AF8AA14BDD5160016AEF0 /* Frameworks */,
+				982AF8A814BDD5160016AEF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		982AF8A814BDD5160016AEF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				982AF8A714BDD5160016AEF0 /* Fortuna.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		982AF8AA14BDD5160016AEF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				982AF8AB14BDD5160016AEF0 /* UIKit.framework */,
+				982AF8AD14BDD5160016AEF0 /* Foundation.framework */,
+				982AF8AF14BDD5160016AEF0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		982AF8B114BDD5160016AEF0 /* Fortuna */ = {
+			isa = PBXGroup;
+			children = (
+				98EB522614C0B41000F7A1A6 /* MainViewController */,
+				98EB522314C0B3E600F7A1A6 /* DrawerViewController */,
+				982AF8BA14BDD5160016AEF0 /* AppDelegate.h */,
+				982AF8BB14BDD5160016AEF0 /* AppDelegate.m */,
+				982AF8B214BDD5160016AEF0 /* Supporting Files */,
+			);
+			path = Fortuna;
+			sourceTree = "<group>";
+		};
+		982AF8B214BDD5160016AEF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				982AF8B314BDD5160016AEF0 /* Fortuna-Info.plist */,
+				982AF8B414BDD5160016AEF0 /* InfoPlist.strings */,
+				982AF8B714BDD5160016AEF0 /* main.m */,
+				982AF8B914BDD5160016AEF0 /* Fortuna-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98EB522314C0B3E600F7A1A6 /* DrawerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				98EB522514C0B3F800F7A1A6 /* DrawerView */,
+				98EB522E14C0B46300F7A1A6 /* DrawerViewController.h */,
+				98EB522F14C0B46300F7A1A6 /* DrawerViewController.m */,
+			);
+			name = DrawerViewController;
+			sourceTree = "<group>";
+		};
+		98EB522514C0B3F800F7A1A6 /* DrawerView */ = {
+			isa = PBXGroup;
+			children = (
+				98EB523114C0B47300F7A1A6 /* DrawerView.h */,
+				98EB523214C0B47300F7A1A6 /* DrawerView.m */,
+			);
+			name = DrawerView;
+			sourceTree = "<group>";
+		};
+		98EB522614C0B41000F7A1A6 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				98EB522714C0B41D00F7A1A6 /* MainView */,
+				98EB522814C0B43900F7A1A6 /* MainViewController.h */,
+				98EB522914C0B43900F7A1A6 /* MainViewController.m */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		98EB522714C0B41D00F7A1A6 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				98EB522B14C0B44F00F7A1A6 /* MainView.h */,
+				98EB522C14C0B44F00F7A1A6 /* MainView.m */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		982AF8A614BDD5160016AEF0 /* Fortuna */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 982AF8BF14BDD5160016AEF0 /* Build configuration list for PBXNativeTarget "Fortuna" */;
+			buildPhases = (
+				982AF8A314BDD5160016AEF0 /* Sources */,
+				982AF8A414BDD5160016AEF0 /* Frameworks */,
+				982AF8A514BDD5160016AEF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fortuna;
+			productName = Fortuna;
+			productReference = 982AF8A714BDD5160016AEF0 /* Fortuna.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		982AF89E14BDD5150016AEF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 982AF8A114BDD5150016AEF0 /* Build configuration list for PBXProject "Fortuna" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 982AF89C14BDD5150016AEF0;
+			productRefGroup = 982AF8A814BDD5160016AEF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				982AF8A614BDD5160016AEF0 /* Fortuna */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		982AF8A514BDD5160016AEF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982AF8B614BDD5160016AEF0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		982AF8A314BDD5160016AEF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982AF8B814BDD5160016AEF0 /* main.m in Sources */,
+				982AF8BC14BDD5160016AEF0 /* AppDelegate.m in Sources */,
+				98EB522A14C0B43900F7A1A6 /* MainViewController.m in Sources */,
+				98EB522D14C0B44F00F7A1A6 /* MainView.m in Sources */,
+				98EB523014C0B46300F7A1A6 /* DrawerViewController.m in Sources */,
+				98EB523314C0B47300F7A1A6 /* DrawerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		982AF8B414BDD5160016AEF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				982AF8B514BDD5160016AEF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		982AF8BD14BDD5160016AEF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		982AF8BE14BDD5160016AEF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		982AF8C014BDD5160016AEF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fortuna/Fortuna-Prefix.pch";
+				INFOPLIST_FILE = "Fortuna/Fortuna-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		982AF8C114BDD5160016AEF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fortuna/Fortuna-Prefix.pch";
+				INFOPLIST_FILE = "Fortuna/Fortuna-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		982AF8A114BDD5150016AEF0 /* Build configuration list for PBXProject "Fortuna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				982AF8BD14BDD5160016AEF0 /* Debug */,
+				982AF8BE14BDD5160016AEF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		982AF8BF14BDD5160016AEF0 /* Build configuration list for PBXNativeTarget "Fortuna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				982AF8C014BDD5160016AEF0 /* Debug */,
+				982AF8C114BDD5160016AEF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 982AF89E14BDD5150016AEF0 /* Project object */;
+}
