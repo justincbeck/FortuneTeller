@@ -19,8 +19,6 @@
     
     MainViewController *mainViewController = [[MainViewController alloc] initWithNibName:nil bundle:nil];
     self.window.rootViewController = mainViewController;
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor purpleColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
