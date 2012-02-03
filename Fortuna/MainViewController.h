@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MainView.h"
+
 @interface MainViewController : UIViewController
+{
+    MainView *_mainView;
+}
+
+- (void)drawerSwiped:(id)sender;
 
 @end

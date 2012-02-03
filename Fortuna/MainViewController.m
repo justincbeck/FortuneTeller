@@ -30,35 +30,53 @@
 
 #pragma mark - View lifecycle
 
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView
 {
-    MainView *mainView = [[MainView alloc] init];
-    self.view = mainView;
+    _mainView = [[MainView alloc] init];
+    _mainView.leftDrawerView.userInteractionEnabled = YES;
+    
+    UISwipeGestureRecognizer *leftSwipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(drawerSwiped:)]; 
+    [leftSwipeGestureRecognizer setDirection:UISwipeGestureRecognizerDirectionLeft];
+    [_mainView.leftDrawerView addGestureRecognizer:leftSwipeGestureRecognizer];  
+    _mainView.leftDrawerView.userInteractionEnabled = YES;
+    
+    UISwipeGestureRecognizer *rightSwipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(drawerSwiped:)];
+    [rightSwipeGestureRecognizer setDirection:UISwipeGestureRecognizerDirectionRight];
+    [_mainView.rightDrawerView addGestureRecognizer:rightSwipeGestureRecognizer];  
+    _mainView.rightDrawerView.userInteractionEnabled = YES;
+    
+    self.view = _mainView;
     
     [UIView animateWithDuration:0.6f delay:0.0f options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
         CGAffineTransform slideRight = CGAffineTransformMakeTranslation(235.0f, 0.0f);
-        mainView.leftDrawerView.transform = slideRight;
+        _mainView.leftDrawerView.transform = slideRight;
         CGAffineTransform slideLeft = CGAffineTransformMakeTranslation(-235.0f, 0.0f);
-        mainView.rightDrawerView.transform = slideLeft;
+        _mainView.rightDrawerView.transform = slideLeft;
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:0.2f delay:0.0f options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
             CGAffineTransform bounceLeft = CGAffineTransformMakeTranslation(220.0f, 0.0f);
-            mainView.leftDrawerView.transform = bounceLeft;
+            _mainView.leftDrawerView.transform = bounceLeft;
             CGAffineTransform bounceRight = CGAffineTransformMakeTranslation(-220.0f, 0.0f);
-            mainView.rightDrawerView.transform = bounceRight;
+            _mainView.rightDrawerView.transform = bounceRight;
         } completion:^(BOOL finished) {
             [UIView animateWithDuration:0.2f delay:0.0f options:UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionBeginFromCurrentState animations:^{
                 CGAffineTransform bounceLeft = CGAffineTransformMakeTranslation(235.0f, 0.0f);
-                mainView.leftDrawerView.transform = bounceLeft;
+                _mainView.leftDrawerView.transform = bounceLeft;
                 CGAffineTransform bounceRight = CGAffineTransformMakeTranslation(-235.0f, 0.0f);
-                mainView.rightDrawerView.transform = bounceRight;
+                _mainView.rightDrawerView.transform = bounceRight;
             } completion:nil];
         }];
     }];
 }
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)drawerSwiped:(id)sender
+{
+    if (((UISwipeGestureRecognizer *)sender).view == _mainView.rightDrawerView)
+        NSLog(@"Right Drawer Swiped!");
+    else
+        NSLog(@"Left Drawer Swiped!");
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
